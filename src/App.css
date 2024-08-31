@@ -1,0 +1,58 @@
+/* Universal CSS */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ArticleCard css */
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  transition: opacity 0.1s ease-in-out; /* Smooth transition */
+}
+
+.card-body {
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+.card:hover, .card-body a:hover{
+  box-shadow: 0 8px 16px rgba(38, 38, 38, 0.5);
+}
+
+.card-img-top:hover{
+  opacity: 100% !important;
+}
+
+
+/* responsive (media queries) */
+
+@media (max-width: 768px) {
+  .card-title {
+      font-size: 1rem;
+  }
+
+  .card-img-top {
+      height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+      height: 120px;
+  }
+}
